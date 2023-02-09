@@ -11,7 +11,6 @@ export default class Result extends React.Component {
         <View style={styles.button}>
             <Ionicons name="ios-arrow-back" size={25} color="#000" onPress={() => this.props.navigation.goBack()}/>
         </View>
-        <View>
           <View style={{ marginTop: 150 }}>
             <Card >
               <Text style={styles.paragraph}>
@@ -19,7 +18,6 @@ export default class Result extends React.Component {
               </Text>
             </Card>
           </View>
-        </View>
       </View>
     );
   }

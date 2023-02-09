@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "flex-start",
     backgroundColor:"white"
+
   },
   paragraph: {
     margin: 24,
