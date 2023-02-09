@@ -20,8 +20,6 @@ export default class Main extends Component {
       this.props.navigation.navigate("Result")
     }, 3000);
   };
-  onSubmit() {
-  }
 
   render() {
     return (

@@ -9,10 +9,7 @@ export default class Result extends React.Component {
     return (
       <View style={styles.containersi}>
         <View style={styles.button}>
-          {/* <Button onPress={() => this.props.navigation.goBack()}> */}
             <Ionicons name="ios-arrow-back" size={25} color="#000" onPress={() => this.props.navigation.goBack()}/>
-            {/* <Text>Go Back</Text>
-          </Button> */}
         </View>
         <View>
           <View style={{ marginTop: 150 }}>
@@ -21,9 +18,7 @@ export default class Result extends React.Component {
                 This is a card from the react-native-elements
               </Text>
             </Card>
-
           </View>
-
         </View>
       </View>
     );
