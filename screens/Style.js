@@ -4,9 +4,13 @@ const styles = StyleSheet.create({
   containersi: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
     paddingTop: 40,
     backgroundColor: '#10F50C',
+  },
+  button: {
+    width: "100%",
+    flexDirection: "row",
+    justifyContent: "flex-start"
   },
   paragraph: {
     margin: 24,
@@ -29,12 +33,12 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     marginBottom: 10,
   },
-  font:{
-    fontSize:30,
-    color:"white",
-    alignItems:"center",
-    marginRight:50,
-    marginLeft:50
+  font: {
+    fontSize: 30,
+    color: "white",
+    alignItems: "center",
+    marginRight: 50,
+    marginLeft: 50
   }
 });
 
