@@ -10,7 +10,8 @@ const styles = StyleSheet.create({
   button: {
     width: "100%",
     flexDirection: "row",
-    justifyContent: "flex-start"
+    justifyContent: "flex-start",
+    backgroundColor:"white"
   },
   paragraph: {
     margin: 24,
