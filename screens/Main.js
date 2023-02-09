@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  Button, TextInput, View, Text } from 'react-native';
+import {  Button, TextInput, View, Text,ActivityIndicator } from 'react-native';
 import styles from './Style';
 
 export default class Main extends Component {
@@ -9,12 +9,18 @@ export default class Main extends Component {
     this.state = {
       city: '',
       Duration: '',
+      loading:'false'
     };
   }
-
+  onLoader () {
+    this.setState({loading:'true'});
+    setTimeout(() => {
+      this.setState({loading:'false'});
+      const { city, Duration } = this.state;
+      this.props.navigation.navigate("Result")
+    }, 3000);
+  };
   onSubmit() {
-    const { city, Duration } = this.state;
-    this.props.navigation.navigate("Result")
   }
 
   render() {
@@ -37,9 +43,14 @@ export default class Main extends Component {
         <Button
           title={'Generate'}
           style={styles.input}
-          onPress={this.onSubmit.bind(this)}
+          onPress={this.onLoader.bind(this)}
         />
+
+        {this.state.loading === 'true' && (
+          <ActivityIndicator size="large" color="#0000ff" />
+        )}
       </View>
     );
   }
 }
+
